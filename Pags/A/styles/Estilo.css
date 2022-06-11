@@ -1,0 +1,151 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display+SC:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Courgette&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IM+Fell+French+Canon+SC&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tiro+Telugu:ital@0;1&display=swap');
+
+:root {
+    --title-font: 'Playfair Display SC', serif;
+    --font-poem: 'Courgette', cursive;
+    --title-sec: 'IM Fell French Canon SC', serif;
+
+    --line: 0 1px black, 1px 0 black, -1px 0 black, 0 -1px black;
+}
+
+body{
+    margin: 0;
+}
+
+header {
+    background-image: url('https://i.ytimg.com/vi/NtOwzU5Rpp8/maxresdefault.jpg');
+    height: 35vh;
+}
+#header-title {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    height: 35vh;
+    
+    margin: 0;
+    
+    color: rgb(255, 174, 0);
+    font-family: var(--title-font);
+    font-size: 12vw;
+    text-align: center;
+    text-decoration: underline;
+    text-shadow: 4px 2px 3px rgba(0, 48, 0, 0.856);
+}
+.sec {
+    border-bottom: 1px solid black;
+    padding: 1rem 0;
+}
+.sec p, li {
+    font-size: 1.4rem;
+}
+li {
+    width: 85vw;
+    margin-bottom: 1rem;
+}
+#prin li {
+    width: 80vw;
+    margin: .8rem auto;
+    font-size: 1.6rem;
+}
+.title {
+    font-family: var(--title-sec);
+    margin: 1rem 1rem 0;
+    font-size: 10vw;
+}
+p {
+    font-family:  'Tiro Telugu', serif;
+    width: 90vw;
+    margin: 2rem auto;
+}
+cite {
+    display: block;
+    font-style: italic;
+    margin: 1rem;
+    width: 85vw;
+}
+
+#poem {
+    background-color: rgb(32, 32, 32);
+    background-image: url(../imgs/Desenho.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding: 0;
+    color: rgb(255, 255, 255);
+    text-shadow: var(--line);
+}
+#poem img {
+    display: none;
+}
+#poem-artc h2{
+    font-size: 8vw;
+    width: 50vw;
+}
+#poem-artc p{
+    font-family: var(--font-poem);
+    font-size: 3vw;
+    font-weight: bold;
+    line-height: 2.2rem;
+    letter-spacing: 2px;
+    width: 80vw;
+}
+#poem-artc {
+    width: 70vw;
+    margin: 1rem auto;
+}
+
+#prin img {
+    display: block;
+    width: 80vw;
+    border-radius: 15%;
+    border: 1px black solid;
+    margin: 2rem auto;
+}
+
+@media screen and (min-width: 660px) {
+    #header-title {
+        font-size: 8vw;
+    }
+    .title {
+        font-size: 7vw;
+    }
+    #poem {
+        background-image: none;
+    }
+    #poem-artc {
+        width: 60vw;
+        margin: 1rem auto;
+    }
+    #poem img {
+        display: block;
+        width: 30vw;
+    }
+    #poem p{
+        width: 60vw;
+        font-size: 2.3vw;
+        line-height: 2.8rem;
+    }
+    #prin img {
+        width: 60vw;
+    }
+    .lis{
+        border-left: 1px solid black;
+        padding-bottom: 2rem;
+        width: 100vw;
+        font-size: 1.4rem;
+    }
+    .lis h2 {
+        font-size: 2rem;
+        width: 30vw;
+        margin-bottom: 2rem;
+    }
+    li {
+        width: 35vw;
+    }
+}
