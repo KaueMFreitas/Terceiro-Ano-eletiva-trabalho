@@ -1,0 +1,258 @@
+@charset "UTF-8";
+
+:root {
+    --background-report-head: #4B7025;
+    --background-body: #88A324;
+}
+
+.flex {
+    display: block;
+}
+
+html, body {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color: var(--background-body);
+}
+
+img {
+    width: 85vw;
+    margin: 2rem 7.5vw;
+
+}
+
+header {
+    background-color: var(--background-report-head);
+
+    height: 10vh;
+}
+header h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 7rem;
+    
+    font-size: 6vw;
+    letter-spacing: .2rem;
+    font-weight: bold;
+
+    margin: 0;
+}
+
+iframe {
+    margin: 1rem 15vw 1rem ;
+    width: 65vw;
+    height: 80vw;
+}
+
+#report {
+    padding-bottom: 4rem;
+}
+.report-txt p{
+    font-size: 4vw;
+    width: 94vw;
+    margin: 0 auto ;
+    line-height: 2.6rem;
+    font-style: italic;
+}
+.report-txt li {
+    font-size: 1.3rem;
+}
+.report-title {
+    text-align: left;
+    margin: 1rem 5vw;
+    font-size: 14vw;
+    font-weight: normal;
+}
+.report-subtitle {
+    width: 70vw;
+    font-size: 6vw;
+    font-weight: normal;
+    text-align: center;
+    margin: 2rem auto;
+}
+.name {
+    margin-left: 1rem;
+    font-size: 5.5vw;
+}
+.ato {
+    font-size: 1.6rem;
+    margin-left: 1.5rem;
+}
+
+#cont-head {
+    height: 20rem;
+}
+#cont-head h1 {
+    align-items: baseline;
+    width: 80%;
+    padding: 8vw 0;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#sec1,
+#sec2,
+#sec3 {
+    border-bottom: 1px solid black;
+    padding: 2rem 0;
+}
+
+#sec1 h2,
+#sec2 h2,
+#sec3 h2 {
+    font-size: 6vw;
+    margin-left: 15px;
+}
+
+#sec1 #att1 img {
+    margin: 0 25vw;
+    width: 50vw;
+    height: 50vw;
+}
+#sec1 #att1 p {
+    width: 90%;
+    margin: 2rem auto;
+    font-size: 4vw;
+}
+
+#sec2 #att1 li {
+    font-size: 4vw;
+    width: 90%;
+    margin-bottom: 1rem;
+}
+#sec2 #att2 p {
+    font-size: 4vw;
+    width: 90%;
+    margin: 0 5%;
+}
+
+#sec3 img {
+    width: 40vw;
+    height: 60vw;
+    margin: 0 30vw;
+}
+#sec3 p {
+    font-size: 4vw;
+    width: 90vw;
+    margin-left: 20px;
+}
+
+@media screen and (min-width: 865px) {
+    body{
+        overflow-x: hidden;
+    }
+    
+    .flex {
+      display: flex;
+    }
+
+    header {
+        height: 13rem;
+    }
+    header h1 {
+        height: 12rem;
+        
+        font-size: 4vw;
+    }
+
+    .report-sec {
+        margin: 3rem 1rem;
+        width: 96vw;
+        padding: 2rem 0;
+        border: 1px solid black;
+    }
+    iframe {
+        margin: 0 1rem;
+        width: 23.5rem;
+        height: auto;
+
+        border: none;
+    }
+    .report-title {
+        text-align: center;
+        margin: 1.3rem auto;
+        font-size: 5vw;
+        font-weight: bold;
+    }
+    .report-txt {
+        width: 15vw;
+        margin: 0 2rem;
+    }
+    .report-subtitle {
+        width: 45vw;
+        font-weight: bold;
+        font-size: 2vw;
+    }
+    .name {
+        margin-left: 1rem;
+        margin-bottom: .6rem;
+        font-size: 1.4vw;
+    }
+    .report-txt p{
+        font-size: 1.4vw;
+        width: 45vw;
+        line-height: 1.5rem;
+    }
+    .ato {
+        font-size: 1vw;
+    }
+
+    #cont-head {
+        height: 20rem;
+    }
+    #cont-head h1 {
+        align-items: baseline;
+        width: 80%;
+        padding: 5rem 0;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+
+    #sec1 #att1 p, 
+    #sec3 p, 
+    #sec2 #att1 li, 
+    #sec2 #att2 p {
+        font-size: 2vw;
+        width: 80vw;
+    }
+
+    #sec1 #att1 p {
+        font-size: 2vw;
+        width: 60vw;
+        margin-left: 1rem;
+    }
+
+    #sec3 p {
+        font-size: 2vw;
+        width: 50vw;
+        margin-left: 10px;
+    }
+    
+    #sec1 h2,
+    #sec2 h2,
+    #sec3 h2 {
+        font-size: 2vw;
+    }
+
+    #sec1 #att1 img {
+        margin: 0 1rem;
+        width: 25vw;
+        height: 25vw;
+    }
+    #sec2 #att2 img {
+        display: block;
+        margin: 2.5rem auto;
+        width: 40vw;
+        height: 35vw;
+    }
+    #sec3 img {
+        display: block;
+        width: 25vw;
+        height: auto;
+        margin: 0 1rem;
+    }
+}
