@@ -1,5 +1,9 @@
 @charset "UTF_8";
 
+body {
+    /* background-color: green; */
+}
+
 h1 {
     font-size: 3vw;
     margin: 2.5vw 6vw;

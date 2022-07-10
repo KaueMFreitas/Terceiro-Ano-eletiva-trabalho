@@ -1,0 +1,66 @@
+@charset "UTF-8";
+
+.flex {
+    display: block;
+}
+
+body {
+    background-color: #d1d1d1;
+}
+
+header, section {
+    border-bottom: 1px solid black;
+}
+
+header {
+    height: 5em;
+    background-color: #fff9a2;
+}
+
+h1 {
+    height: 1.8em;
+    margin: 0;
+    font-size: 7vw;
+}
+h2 {
+    font-size: 3.8vw;
+}
+p, li, a {
+    font-size: 3vw;
+}
+
+img {
+    margin: 1em auto;
+}
+
+article {
+    width: 88%;
+    margin: 1rem auto;
+}
+
+#um {
+    margin: 0 auto;
+    width: 50vw;
+}
+
+@media screen and (min-width:660px) {
+    .flex {
+        display: flex;
+    }
+
+    h1 {
+        height: 1.5em;
+        font-size: 4vw;
+    }
+    h2 {
+        font-size: 2.5vw;
+    }
+    p, li, a {
+        font-size: 2vw;
+    }
+    #um img {
+        margin-left: 1em;
+        width: 35vw;
+        height: auto;
+    }
+}

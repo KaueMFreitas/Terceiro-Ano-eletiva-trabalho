@@ -23,6 +23,12 @@
     display: flex;
 }
 
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
 @media screen and (min-width: 660px) {
     .back {
         font-size: 3vw;

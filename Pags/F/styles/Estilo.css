@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: #d1d1d1;
+    background-color: #92ffad;
 }
 
 header, section {
@@ -13,17 +13,14 @@ header, section {
 }
 
 header {
-    height: 7em;
-    background-color: #fff9a2;
+    height: 5em;
+    background-color: #F2E205;
 }
 
 h1 {
-    height: 2.5em;
+    height: 1.8em;
     margin: 0;
     font-size: 7vw;
-}
-header h1:last-child() {
-    height: 2.5em;
 }
 h2 {
     font-size: 3.8vw;
@@ -32,18 +29,12 @@ p, li, a {
     font-size: 3vw;
 }
 
-img {
-    width: 50vw;
-
-    margin: 1em auto;
-}
-
 article {
     width: 88%;
     margin: 1rem auto;
 }
 
-#um {
+#um img {
     margin: 0 auto;
     width: 50vw;
 }

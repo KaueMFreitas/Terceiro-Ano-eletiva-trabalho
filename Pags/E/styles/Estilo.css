@@ -243,10 +243,15 @@ iframe {
         width: 25vw;
         height: 25vw;
     }
+    #foto1 {
+        display: block;
+        margin: 2rem auto;
+        width: 60vw;
+    }
     #sec2 #att2 img {
         display: block;
         margin: 2.5rem auto;
-        width: 40vw;
+        width: 60vw;
         height: 35vw;
     }
     #sec3 img {
@@ -255,4 +260,8 @@ iframe {
         height: auto;
         margin: 0 1rem;
     }
+
+    #report3 iframe, #report2 iframe {
+        height: 30rem;
+    } 
 }
